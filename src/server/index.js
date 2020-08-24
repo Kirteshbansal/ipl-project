@@ -3,7 +3,9 @@ const csv = require("csvtojson");
 const MATCHES_FILE_PATH = "./../data/matches.csv";
 const DELIVERIES_FILE_PATH = "./../data/deliveries.csv";
 const teamWonTossAndMatch = require("./problems/teamWonTossAndMatch");
+const highestTimesPOMPerSeason = require("./problems/highestTimesPOMPerSeason");
 const DATA_JSON_FILE_PATH1 = "./../public/output/teamWonTossAndMatch.json";
+const DATA_JSON_FILE_PATH2 = "./../public/output/highestTimesPOMPerSeason.json";
 function main(){
     csv()
       .fromFile(MATCHES_FILE_PATH)
@@ -13,6 +15,8 @@ function main(){
         .then(deliveries => {
           let result = teamWonTossAndMatch(matches);
           saveData("teamWonTossAndMatch",result,DATA_JSON_FILE_PATH1)
+          let result1 = highestTimesPOMPerSeason(matches);
+          saveData("highestTimesPOMPerSeason",result1,DATA_JSON_FILE_PATH2)
            // console.log(result1);
 
    })
