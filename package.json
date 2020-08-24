@@ -1,0 +1,20 @@
+{
+  "name": "ipl",
+  "version": "1.0.0",
+  "description": "IPL DATA VISUALISATION",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ipl"
+  ],
+  "author": "Kirtesh",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
