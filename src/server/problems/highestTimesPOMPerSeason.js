@@ -31,7 +31,7 @@ function highestTimesPOMPerSeason(matches){
     result[i] = max
     
 }
-console.log(result)
+// console.log(result)
     return result;
 }
 
