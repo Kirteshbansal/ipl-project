@@ -4,8 +4,10 @@ const MATCHES_FILE_PATH = "./../data/matches.csv";
 const DELIVERIES_FILE_PATH = "./../data/deliveries.csv";
 const teamWonTossAndMatch = require("./problems/teamWonTossAndMatch");
 const highestTimesPOMPerSeason = require("./problems/highestTimesPOMPerSeason");
+const strikeRateOfMSDhoni = require("./problems/strikeRateOfMSDhoni");
 const DATA_JSON_FILE_PATH1 = "./../public/output/teamWonTossAndMatch.json";
 const DATA_JSON_FILE_PATH2 = "./../public/output/highestTimesPOMPerSeason.json";
+const DATA_JSON_FILE_PATH3 = "./../public/output/strikeRateOfMSDhoni.json";
 function main(){
     csv()
       .fromFile(MATCHES_FILE_PATH)
@@ -17,8 +19,8 @@ function main(){
           saveData("teamWonTossAndMatch",result,DATA_JSON_FILE_PATH1)
           let result1 = highestTimesPOMPerSeason(matches);
           saveData("highestTimesPOMPerSeason",result1,DATA_JSON_FILE_PATH2)
-           // console.log(result1);
-
+          let result2 = strikeRateOfMSDhoni(matches,deliveries);
+          saveData("strikeRateOfMSDhoni",result2,DATA_JSON_FILE_PATH3);
    })
   })
 };
