@@ -6,10 +6,12 @@ const teamWonTossAndMatch = require("./problems/teamWonTossAndMatch");
 const highestTimesPOMPerSeason = require("./problems/highestTimesPOMPerSeason");
 const strikeRateOfMSDhoni = require("./problems/strikeRateOfMSDhoni");
 const highestTimesDissmissedPlayer = require("./problems/highestTimesDissmissedPlayer");
+const bestSuperOverEconomyBowler = require("./problems/bestSuperOverEconomyBowler");
 const DATA_JSON_FILE_PATH1 = "./../public/output/teamWonTossAndMatch.json";
 const DATA_JSON_FILE_PATH2 = "./../public/output/highestTimesPOMPerSeason.json";
 const DATA_JSON_FILE_PATH3 = "./../public/output/strikeRateOfMSDhoni.json";
 const DATA_JSON_FILE_PATH4 = "./../public/output/highestTimesDissmissedPlayer.json";
+const DATA_JSON_FILE_PATH5 = "./../public/output/bestSuperOverEconomyBowler.json";
 function main(){
     csv()
       .fromFile(MATCHES_FILE_PATH)
@@ -25,6 +27,8 @@ function main(){
           saveData("strikeRateOfMSDhoni",result2,DATA_JSON_FILE_PATH3);
           let result3 = highestTimesDissmissedPlayer(matches,deliveries);
           saveData("highestTimesDissmissedPlayer",result3,DATA_JSON_FILE_PATH4);
+          let result4 = bestSuperOverEconomyBowler(deliveries);
+          saveData("bestSuperOverEconomyBowler",result4,DATA_JSON_FILE_PATH5);
    })
   })
 };
