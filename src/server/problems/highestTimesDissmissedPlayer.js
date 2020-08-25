@@ -1,4 +1,4 @@
-function highestTimesDissmissedPlayer(matches,deliveries){
+function highestTimesDissmissedPlayer(deliveries){
     let dissmissedPlayers = {};
     for(let delivery of deliveries){
         let bowler = delivery["bowler"];
