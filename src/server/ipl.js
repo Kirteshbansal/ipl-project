@@ -107,9 +107,42 @@ function highestTimesDissmissedPlayer(deliveries) {
   };
 }
 
+// Best economy rate bowler in super overs
+function bestSuperOverEconomyBowler(deleveries) {
+  let result = deleveries.reduce((result, delivery) => {
+    if (parseInt(delivery["is_super_over"]) !== 0) {
+      let bowler = delivery["bowler"];
+      if (result[bowler]) {
+        result[bowler][0] += parseInt(delivery["total_runs"]);
+        result[bowler][1] += 1;
+      } else {
+        result[bowler] = [];
+        result[bowler][0] = parseInt(delivery["total_runs"]);
+        result[bowler][1] = 1;
+      }
+    }
+    return result;
+  }, {});
+
+  result = Object.entries(result);
+
+  const economyRate = (balls, runs) =>
+    parseFloat(runs / parseFloat(balls / 6)).toFixed(2);
+
+  result = result
+    .map((bowler) => [
+      bowler[0],
+      (bowler[1] = parseFloat(economyRate(bowler[1][1], bowler[1][0]))),
+    ])
+    .sort((a, b) => a[1] - b[1])[0];
+
+  return { bowler: result[0], "economy rate": result[1] };
+}
+
 module.exports = {
   teamWonTossAndMatch: teamWonTossAndMatch,
   highestTimesPOMPerSeason: highestTimesPOMPerSeason,
   strikeRateOfPlayer: strikeRateOfPlayer,
   highestTimesDissmissedPlayer: highestTimesDissmissedPlayer,
+  bestSuperOverEconomyBowler: bestSuperOverEconomyBowler,
 };
