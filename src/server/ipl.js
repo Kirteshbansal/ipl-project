@@ -83,8 +83,33 @@ function strikeRateOfPlayer(matches, deliveries, playerName) {
   }, {});
 }
 
+// Highest times dissmissed player
+function highestTimesDissmissedPlayer(deliveries) {
+  const result = Object.entries(
+    deliveries.reduce((data, delivery) => {
+      let bowler = delivery["bowler"];
+      let dismissedplayer = delivery["player_dismissed"];
+      if (dismissedplayer) {
+        if (data[dismissedplayer + "-" + bowler]) {
+          data[dismissedplayer + "-" + bowler] += 1;
+        } else {
+          data[dismissedplayer + "-" + bowler] = 1;
+        }
+      }
+      return data;
+    }, {})
+  ).sort((a, b) => b[1] - a[1])[0];
+  result[0] = result[0].split("-");
+  return {
+    "player name": result[0][0],
+    "dissmisal count": result[1],
+    "bowler name": result[0][1],
+  };
+}
+
 module.exports = {
   teamWonTossAndMatch: teamWonTossAndMatch,
   highestTimesPOMPerSeason: highestTimesPOMPerSeason,
   strikeRateOfPlayer: strikeRateOfPlayer,
+  highestTimesDissmissedPlayer: highestTimesDissmissedPlayer,
 };
