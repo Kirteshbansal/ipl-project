@@ -19,16 +19,16 @@ function main() {
       csv()
         .fromFile(DELIVERIES_FILE_PATH)
         .then((deliveries) => {
-          let result = teamWonTossAndMatch(matches);
+          let result = ipl.teamWonTossAndMatch(matches);
           saveData("teamWonTossAndMatch", result, DATA_JSON_FILE_PATH1);
-          let result1 = highestTimesPOMPerSeason(matches);
+          let result1 = ipl.highestTimesPOMPerSeason(matches);
           const player = "MS Dhoni";
           saveData("highestTimesPOMPerSeason", result1, DATA_JSON_FILE_PATH2);
-          let result2 = strikeRateOfPlayer(matches, deliveries,player);
+          let result2 = ipl.strikeRateOfPlayer(matches, deliveries,player);
           saveData(`strikeRateOf${player}`, result2, DATA_JSON_FILE_PATH3);
-          let result3 = highestTimesDissmissedPlayer(deliveries);
+          let result3 = ipl.highestTimesDissmissedPlayer(deliveries);
           saveData("highestTimesDissmissedPlayer",result3,DATA_JSON_FILE_PATH4);
-          let result4 = bestSuperOverEconomyBowler(deliveries);
+          let result4 = ipl.bestSuperOverEconomyBowler(deliveries);
           saveData("bestSuperOverEconomyBowler", result4, DATA_JSON_FILE_PATH5);
         });
     });
