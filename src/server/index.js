@@ -8,7 +8,7 @@ const MATCHES_FILE_PATH = path.join(__dirname, "../data/matches.csv");
 const DELIVERIES_FILE_PATH = path.join(__dirname, "../data/deliveries.csv");
 const DATA_JSON_FILE_PATH1 = path.join(__dirname, "../public/output/teamWonTossAndMatch.json");
 const DATA_JSON_FILE_PATH2 = path.join(__dirname, "../public/output/highestTimesPOMPerSeason.json");
-const DATA_JSON_FILE_PATH3 = path.join(__dirname, "../public/output/strikeRateOfMSDhoni.json");
+const DATA_JSON_FILE_PATH3 = path.join(__dirname, "../public/output/strikeRateOfPlayer.json");
 const DATA_JSON_FILE_PATH4 = path.join(__dirname, "../public/output/highestTimesDissmissedPlayer.json");
 const DATA_JSON_FILE_PATH5 = path.join(__dirname, "../public/output/bestSuperOverEconomyBowler.json");
 
