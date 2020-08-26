@@ -39,7 +39,52 @@ function highestTimesPOMPerSeason(matches) {
   }, {});
 }
 
+// Strike rate of a player
+function strikeRateOfPlayer(matches, deliveries, playerName) {
+  let playerDataPerMatch = deliveries.reduce((data, delivery) => {
+    let batsman = delivery["batsman"];
+    let id = delivery["match_id"];
+    if (batsman == playerName) {
+      if (data.hasOwnProperty(id)) {
+        data[id]["balls"] += 1;
+        data[id]["runs"] += parseInt(delivery["batsman_runs"]);
+      } else {
+        data[id] = {};
+        data[id]["balls"] = 1;
+        data[id]["runs"] = parseInt(delivery["batsman_runs"]);
+      }
+    }
+    return data;
+  }, {});
+
+  let strikeRate = (balls, runs) => ((runs / balls) * 100).toFixed(2);
+
+  return Object.entries(
+    matches.reduce((result, match) => {
+      let matchId = match["id"];
+      let season = match["season"];
+      if (playerDataPerMatch[matchId]) {
+        if (result[season]) {
+          result[season]["balls"] += playerDataPerMatch[matchId]["balls"];
+          result[season]["runs"] += playerDataPerMatch[matchId]["runs"];
+        } else {
+          result[season] = {};
+          result[season]["balls"] = playerDataPerMatch[matchId]["balls"];
+          result[season]["runs"] = playerDataPerMatch[matchId]["runs"];
+        }
+      }
+      return result;
+    }, {})
+  ).reduce((result, season) => {
+    result[season[0]] = parseFloat(
+      strikeRate(season[1]["balls"], season[1]["runs"])
+    );
+    return result;
+  }, {});
+}
+
 module.exports = {
   teamWonTossAndMatch: teamWonTossAndMatch,
   highestTimesPOMPerSeason: highestTimesPOMPerSeason,
+  strikeRateOfPlayer: strikeRateOfPlayer,
 };
