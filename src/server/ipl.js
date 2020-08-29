@@ -90,10 +90,11 @@ function highestTimesDissmissedPlayer(deliveries) {
       let bowler = delivery["bowler"];
       let dismissedplayer = delivery["player_dismissed"];
       if (dismissedplayer) {
-        if (data[dismissedplayer + "-" + bowler]) {
-          data[dismissedplayer + "-" + bowler] += 1;
+        let key = dismissedplayer + "-" + bowler;
+        if (data[key]) {
+          data[key] += 1;
         } else {
-          data[dismissedplayer + "-" + bowler] = 1;
+          data[key] = 1;
         }
       }
       return data;
