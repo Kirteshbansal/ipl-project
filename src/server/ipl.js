@@ -114,12 +114,12 @@ function bestSuperOverEconomyBowler(deleveries) {
     if (parseInt(delivery["is_super_over"]) !== 0) {
       let bowler = delivery["bowler"];
       if (result[bowler]) {
-        result[bowler][0] += parseInt(delivery["total_runs"]);
-        result[bowler][1] += 1;
+        result[bowler]["runs"] += parseInt(delivery["total_runs"]);
+        result[bowler]["balls"] += 1;
       } else {
-        result[bowler] = [];
-        result[bowler][0] = parseInt(delivery["total_runs"]);
-        result[bowler][1] = 1;
+        result[bowler] = {};
+        result[bowler]["runs"] = parseInt(delivery["total_runs"]);
+        result[bowler]["balls"] = 1;
       }
     }
     return result;
@@ -133,7 +133,9 @@ function bestSuperOverEconomyBowler(deleveries) {
   result = result
     .map((bowler) => [
       bowler[0],
-      (bowler[1] = parseFloat(economyRate(bowler[1][1], bowler[1][0]))),
+      (bowler[1] = parseFloat(
+        economyRate(bowler[1]["balls"], bowler[1]["runs"])
+      )),
     ])
     .sort((a, b) => a[1] - b[1])[0];
 
