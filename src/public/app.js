@@ -33,7 +33,7 @@ async function visualizeTeamWonTossAndMatch() {
     },
     series: [
       {
-        name: "Teams",
+        name: "Won toss & match",
         data: teamData,
       },
     ],
@@ -41,3 +41,46 @@ async function visualizeTeamWonTossAndMatch() {
 }
 
 visualizeTeamWonTossAndMatch();
+
+async function visualizehighestTimesPOMPerSeason() {
+  let data = await fetch("./output/highestTimesPOMPerSeason.json")
+    .then((response) => response.json())
+    .then((response) => response.highestTimesPOMPerSeason)
+    .then((response) => Object.entries(response))
+    .then((response) => response.map((response) => ({ name: response[1][0], data: [[response[0], response[1][1]]] })));
+
+  Highcharts.chart("player-of-the-match-per-season", {
+    chart: {
+      type: "column",
+    },
+    title: {
+      text: "2. Highest Times Player of The Match Per Season",
+    },
+    xAxis: {
+      type: "category",
+    },
+    yAxis: {
+      min: 0,
+      title: {
+        text: "Number of times",
+      },
+    },
+    tooltip: {
+      headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+      pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+          '<td style="padding:0"><b>{point.y:.f} times</b></td></tr>',
+      footerFormat: '</table>',
+      shared: true,
+      useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 1,
+            borderWidth: 5
+        }
+    },
+    series: data,
+  });
+}
+
+visualizehighestTimesPOMPerSeason();
