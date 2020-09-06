@@ -4,40 +4,14 @@ async function visualizeTeamWonTossAndMatch() {
     .then((response) => response.teamWonTossAndMatch);
 
   const teamData = Object.entries(data);
-  
-  Highcharts.chart("teams-won-matches-and-toss", {
-    chart: {
-      type: "column",
-    },
-    title: {
-      text: "1. Number of Times Each Team Won Both Toss And Match",
-    },
-    subtitle: {
-      text:
-        'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>',
-    },
-    xAxis: {
-      type: "category",
-      labels: {
-        rotation: -45,
-        style: {
-          fontSize: "13px",
-          fontFamily: "Verdana, sans-serif",
-        },
-      },
-    },
-    yAxis: {
-      title: {
-        text: "Number of times",
-      },
-    },
-    series: [
-      {
-        name: "Won toss & match",
-        data: teamData,
-      },
-    ],
-  });
+
+  CommonHighChart(
+    "teams-won-matches-and-toss",
+    "1. Number of Times Each Team Won Both Toss And Match",
+    "Number of times",
+    "Won toss & match",
+    teamData
+  );
 }
 
 visualizeTeamWonTossAndMatch();
@@ -47,7 +21,12 @@ async function visualizehighestTimesPOMPerSeason() {
     .then((response) => response.json())
     .then((response) => response.highestTimesPOMPerSeason)
     .then((response) => Object.entries(response))
-    .then((response) => response.map((response) => ({ name: response[1][0], data: [[response[0], response[1][1]]] })));
+    .then((response) =>
+      response.map((response) => ({
+        name: response[1][0],
+        data: [[response[0], response[1][1]]],
+      }))
+    );
 
   Highcharts.chart("player-of-the-match-per-season", {
     chart: {
@@ -67,17 +46,18 @@ async function visualizehighestTimesPOMPerSeason() {
     },
     tooltip: {
       headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-      pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-          '<td style="padding:0"><b>{point.y:.f} times</b></td></tr>',
-      footerFormat: '</table>',
+      pointFormat:
+        '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+        '<td style="padding:0"><b>{point.y:.f} times</b></td></tr>',
+      footerFormat: "</table>",
       shared: true,
-      useHTML: true
+      useHTML: true,
     },
     plotOptions: {
-        column: {
-            pointPadding: 1,
-            borderWidth: 5
-        }
+      column: {
+        pointPadding: 1,
+        borderWidth: 5,
+      },
     },
     series: data,
   });
@@ -85,14 +65,13 @@ async function visualizehighestTimesPOMPerSeason() {
 
 visualizehighestTimesPOMPerSeason();
 
-
 async function visualizestrikeRateOfPlayer() {
   let data = await fetch("./output/strikeRateOfPlayer.json")
     .then((response) => response.json())
     .then((response) => response["strikeRateOfMS Dhoni"]);
 
   const playerData = Object.entries(data);
-  
+
   Highcharts.chart("strike-rate-of-player", {
     chart: {
       type: "column",
@@ -130,9 +109,7 @@ async function visualizestrikeRateOfPlayer() {
 
 visualizestrikeRateOfPlayer();
 
-
-function CommonHighChart(container,title,yAxisTitle,name,data){
-
+function CommonHighChart(container, title, yAxisTitle, name, data) {
   Highcharts.chart(container, {
     chart: {
       type: "column",
