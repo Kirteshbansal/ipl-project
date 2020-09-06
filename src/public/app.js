@@ -72,39 +72,13 @@ async function visualizestrikeRateOfPlayer() {
 
   const playerData = Object.entries(data);
 
-  Highcharts.chart("strike-rate-of-player", {
-    chart: {
-      type: "column",
-    },
-    title: {
-      text: "3. Strike Rate of MS Dhoni Per Season",
-    },
-    subtitle: {
-      text:
-        'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>',
-    },
-    xAxis: {
-      type: "category",
-      labels: {
-        rotation: 0,
-        style: {
-          fontSize: "13px",
-          fontFamily: "Verdana, sans-serif",
-        },
-      },
-    },
-    yAxis: {
-      title: {
-        text: "Strike rate",
-      },
-    },
-    series: [
-      {
-        name: "Strike rate",
-        data: playerData,
-      },
-    ],
-  });
+  CommonHighChart(
+    "strike-rate-of-player",
+    "3. Strike Rate of MS Dhoni Per Season",
+    "Strike rate",
+    "Strike rate",
+    playerData
+  );
 }
 
 visualizestrikeRateOfPlayer();
