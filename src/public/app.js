@@ -4,7 +4,7 @@ async function visualizeTeamWonTossAndMatch() {
     .then((response) => response.teamWonTossAndMatch);
 
   const teamData = Object.entries(data);
-
+  
   Highcharts.chart("teams-won-matches-and-toss", {
     chart: {
       type: "column",
@@ -92,7 +92,7 @@ async function visualizestrikeRateOfPlayer() {
     .then((response) => response["strikeRateOfMS Dhoni"]);
 
   const playerData = Object.entries(data);
-
+  
   Highcharts.chart("strike-rate-of-player", {
     chart: {
       type: "column",
@@ -129,3 +129,41 @@ async function visualizestrikeRateOfPlayer() {
 }
 
 visualizestrikeRateOfPlayer();
+
+
+function CommonHighChart(container,title,yAxisTitle,name,data){
+
+  Highcharts.chart(container, {
+    chart: {
+      type: "column",
+    },
+    title: {
+      text: title,
+    },
+    subtitle: {
+      text:
+        'Source: <a href="https://www.kaggle.com/nowke9/ipldata/data">IPL Dataset</a>',
+    },
+    xAxis: {
+      type: "category",
+      labels: {
+        rotation: name === "Strike rate" ? 0 : -45,
+        style: {
+          fontSize: "13px",
+          fontFamily: "Verdana, sans-serif",
+        },
+      },
+    },
+    yAxis: {
+      title: {
+        text: yAxisTitle,
+      },
+    },
+    series: [
+      {
+        name: name,
+        data: data,
+      },
+    ],
+  });
+}
