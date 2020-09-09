@@ -74,12 +74,14 @@ async function visualizestrikeRateOfPlayer() {
 
   const playerData = Object.entries(data);
 
+  const angle = 0;
   CommonHighChart(
     "strike-rate-of-player",
     "3. Strike Rate of MS Dhoni Per Season",
     "Strike rate",
     "Strike rate",
-    playerData
+    playerData,
+    0
   );
 }
 
