@@ -5,12 +5,14 @@ async function visualizeTeamWonTossAndMatch() {
 
   const teamData = Object.entries(data);
 
+  const angle = -45;
   CommonHighChart(
     "teams-won-matches-and-toss",
     "1. Number of Times Each Team Won Both Toss And Match",
     "Number of times",
     "Won toss & match",
-    teamData
+    teamData,
+    angle
   );
 }
 
