@@ -83,7 +83,7 @@ async function visualizestrikeRateOfPlayer() {
 
 visualizestrikeRateOfPlayer();
 
-function CommonHighChart(container, title, yAxisTitle, name, data) {
+function CommonHighChart(container, title, yAxisTitle, name, data, angle) {
   Highcharts.chart(container, {
     chart: {
       type: "column",
@@ -98,7 +98,7 @@ function CommonHighChart(container, title, yAxisTitle, name, data) {
     xAxis: {
       type: "category",
       labels: {
-        rotation: name === "Strike rate" ? 0 : -45,
+        rotation: angle,
         style: {
           fontSize: "13px",
           fontFamily: "Verdana, sans-serif",
