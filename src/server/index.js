@@ -10,7 +10,10 @@ async function main() {
     }
     console.log("connected as id " + connection.threadId);
   });
-  const result = await Promise.all([ipl.matchesPlayedPerYear()]);
+  const result = await Promise.all([
+    ipl.matchesPlayedPerYear(),
+    ipl.matchesWonByEachTeam(),
+  ]);
   dataProcess.saveData(result);
   connection.end();
 }
