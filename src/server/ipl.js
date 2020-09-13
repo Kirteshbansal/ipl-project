@@ -7,6 +7,14 @@ function matchesPlayedPerYear() {
   return dataProcess.queryExecuter(matchesPlayedPerYearQuery);
 }
 
+// Number of matches won per team per year in IPL
+function matchesWonByEachTeam() {
+  const matchesWonByEachTeamQuery =
+    "SELECT `season`, winner ,COUNT(winner) AS total_wins FROM matches GROUP BY season,winner;";
+  return dataProcess.queryExecuter(matchesWonByEachTeamQuery);
+}
+
 module.exports = {
   matchesPlayedPerYear: matchesPlayedPerYear,
+  matchesWonByEachTeam: matchesWonByEachTeam,
 };
