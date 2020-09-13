@@ -9,6 +9,7 @@ fetchAndVisualizeData();
 function visualizeData(data) {
   visualizeMatchesPlayedPerYear(data.matchesPlayedPerYear);
   visualizeMatchesWonByEachTeam(data.matchesWonByEachTeam);
+  visualizeExtraRunsConcededByEachTeam(data.extraRunsConcededByEachTeam);
 }
 
 // visualizeMatchesPlayedPerYear
@@ -47,6 +48,20 @@ function visualizeMatchesWonByEachTeam(matchesWonByEachTeam) {
     "2. Number of matches Won By Each Team Over All the Years of IPL",
     "Matches Won",
     seriesData
+  );
+}
+
+// visualizeExtraRunsConcededByEachTeam
+function visualizeExtraRunsConcededByEachTeam(extraRunsConcededByEachTeam) {
+  const seriesData = extraRunsConcededByEachTeam.map((el) => Object.values(el));
+  const angle = -45;
+  CommonHighChart(
+    "extra-runs",
+    "3.Extra Runs Conceded by Each Team in 2016",
+    "Runs",
+    "Teams",
+    seriesData,
+    angle
   );
 }
 
