@@ -11,6 +11,7 @@ function visualizeData(data) {
   visualizeMatchesWonByEachTeam(data.matchesWonByEachTeam);
   visualizeExtraRunsConcededByEachTeam(data.extraRunsConcededByEachTeam);
   visualizeEconomicalBowlers(data.economicalBowlers);
+  visualizeTeamWonTossAndMatch(data.teamWonTossAndMatch);
 }
 
 // visualizeMatchesPlayedPerYear
@@ -75,6 +76,20 @@ function visualizeEconomicalBowlers(economicalBowlers) {
     "4.Top 10 Economical Bowler in 2015",
     "Economy Rate",
     "Bowlers",
+    seriesData,
+    angle
+  );
+}
+
+// visualizeTeamWonTossAndMatch
+function visualizeTeamWonTossAndMatch(teamWonTossAndMatch) {
+  const seriesData = teamWonTossAndMatch.map((el) => Object.values(el));
+  const angle = -45;
+  CommonHighChart(
+    "teams-won-matche-and-toss",
+    "5.Number of Times Each Team Won Toss & Match",
+    "No. of Times",
+    "Teams",
     seriesData,
     angle
   );
