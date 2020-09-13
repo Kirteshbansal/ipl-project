@@ -13,6 +13,7 @@ async function main() {
   const result = await Promise.all([
     ipl.matchesPlayedPerYear(),
     ipl.matchesWonByEachTeam(),
+    ipl.extraRunsConcededByEachTeam(),
   ]);
   dataProcess.saveData(result);
   connection.end();
