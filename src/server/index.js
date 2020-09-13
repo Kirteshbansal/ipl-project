@@ -16,6 +16,7 @@ async function main() {
     ipl.extraRunsConcededByEachTeam(),
     ipl.economicalBowlers(),
     ipl.teamWonTossAndMatch(),
+    ipl.strikeRateOfPlayer(),
   ]);
   dataProcess.saveData(result);
   connection.end();
