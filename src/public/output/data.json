@@ -1,1 +1,652 @@
-{"matchesPlayedPerYear":[{"season":2008,"matchesCount":58},{"season":2009,"matchesCount":57},{"season":2010,"matchesCount":60},{"season":2011,"matchesCount":73},{"season":2012,"matchesCount":74},{"season":2013,"matchesCount":76},{"season":2014,"matchesCount":60},{"season":2015,"matchesCount":59},{"season":2016,"matchesCount":60},{"season":2017,"matchesCount":59}],"matchesWonByEachTeam":[{"season":2008,"winner":"Chennai Super Kings","total_wins":9},{"season":2008,"winner":"Deccan Chargers","total_wins":2},{"season":2008,"winner":"Delhi Daredevils","total_wins":7},{"season":2008,"winner":"Kings XI Punjab","total_wins":10},{"season":2008,"winner":"Kolkata Knight Riders","total_wins":6},{"season":2008,"winner":"Mumbai Indians","total_wins":7},{"season":2008,"winner":"Rajasthan Royals","total_wins":13},{"season":2008,"winner":"Royal Challengers Bangalore","total_wins":4},{"season":2009,"winner":"Chennai Super Kings","total_wins":8},{"season":2009,"winner":"Deccan Chargers","total_wins":9},{"season":2009,"winner":"Delhi Daredevils","total_wins":10},{"season":2009,"winner":"Kings XI Punjab","total_wins":7},{"season":2009,"winner":"Kolkata Knight Riders","total_wins":3},{"season":2009,"winner":"Mumbai Indians","total_wins":5},{"season":2009,"winner":"Rajasthan Royals","total_wins":6},{"season":2009,"winner":"Royal Challengers Bangalore","total_wins":9},{"season":2010,"winner":"Chennai Super Kings","total_wins":9},{"season":2010,"winner":"Deccan Chargers","total_wins":8},{"season":2010,"winner":"Delhi Daredevils","total_wins":7},{"season":2010,"winner":"Kings XI Punjab","total_wins":4},{"season":2010,"winner":"Kolkata Knight Riders","total_wins":7},{"season":2010,"winner":"Mumbai Indians","total_wins":11},{"season":2010,"winner":"Rajasthan Royals","total_wins":6},{"season":2010,"winner":"Royal Challengers Bangalore","total_wins":8},{"season":2011,"winner":"","total_wins":1},{"season":2011,"winner":"Chennai Super Kings","total_wins":11},{"season":2011,"winner":"Deccan Chargers","total_wins":6},{"season":2011,"winner":"Delhi Daredevils","total_wins":4},{"season":2011,"winner":"Kings XI Punjab","total_wins":7},{"season":2011,"winner":"Kochi Tuskers Kerala","total_wins":6},{"season":2011,"winner":"Kolkata Knight Riders","total_wins":8},{"season":2011,"winner":"Mumbai Indians","total_wins":10},{"season":2011,"winner":"Pune Warriors","total_wins":4},{"season":2011,"winner":"Rajasthan Royals","total_wins":6},{"season":2011,"winner":"Royal Challengers Bangalore","total_wins":10},{"season":2012,"winner":"Chennai Super Kings","total_wins":10},{"season":2012,"winner":"Deccan Chargers","total_wins":4},{"season":2012,"winner":"Delhi Daredevils","total_wins":11},{"season":2012,"winner":"Kings XI Punjab","total_wins":8},{"season":2012,"winner":"Kolkata Knight Riders","total_wins":12},{"season":2012,"winner":"Mumbai Indians","total_wins":10},{"season":2012,"winner":"Pune Warriors","total_wins":4},{"season":2012,"winner":"Rajasthan Royals","total_wins":7},{"season":2012,"winner":"Royal Challengers Bangalore","total_wins":8},{"season":2013,"winner":"Chennai Super Kings","total_wins":12},{"season":2013,"winner":"Delhi Daredevils","total_wins":3},{"season":2013,"winner":"Kings XI Punjab","total_wins":8},{"season":2013,"winner":"Kolkata Knight Riders","total_wins":6},{"season":2013,"winner":"Mumbai Indians","total_wins":13},{"season":2013,"winner":"Pune Warriors","total_wins":4},{"season":2013,"winner":"Rajasthan Royals","total_wins":11},{"season":2013,"winner":"Royal Challengers Bangalore","total_wins":9},{"season":2013,"winner":"Sunrisers Hyderabad","total_wins":10},{"season":2014,"winner":"Chennai Super Kings","total_wins":10},{"season":2014,"winner":"Delhi Daredevils","total_wins":2},{"season":2014,"winner":"Kings XI Punjab","total_wins":12},{"season":2014,"winner":"Kolkata Knight Riders","total_wins":11},{"season":2014,"winner":"Mumbai Indians","total_wins":7},{"season":2014,"winner":"Rajasthan Royals","total_wins":7},{"season":2014,"winner":"Royal Challengers Bangalore","total_wins":5},{"season":2014,"winner":"Sunrisers Hyderabad","total_wins":6},{"season":2015,"winner":"","total_wins":2},{"season":2015,"winner":"Chennai Super Kings","total_wins":10},{"season":2015,"winner":"Delhi Daredevils","total_wins":5},{"season":2015,"winner":"Kings XI Punjab","total_wins":3},{"season":2015,"winner":"Kolkata Knight Riders","total_wins":7},{"season":2015,"winner":"Mumbai Indians","total_wins":10},{"season":2015,"winner":"Rajasthan Royals","total_wins":7},{"season":2015,"winner":"Royal Challengers Bangalore","total_wins":8},{"season":2015,"winner":"Sunrisers Hyderabad","total_wins":7},{"season":2016,"winner":"Delhi Daredevils","total_wins":7},{"season":2016,"winner":"Gujarat Lions","total_wins":9},{"season":2016,"winner":"Kings XI Punjab","total_wins":4},{"season":2016,"winner":"Kolkata Knight Riders","total_wins":8},{"season":2016,"winner":"Mumbai Indians","total_wins":7},{"season":2016,"winner":"Rising Pune Supergiants","total_wins":5},{"season":2016,"winner":"Royal Challengers Bangalore","total_wins":9},{"season":2016,"winner":"Sunrisers Hyderabad","total_wins":11},{"season":2017,"winner":"Delhi Daredevils","total_wins":6},{"season":2017,"winner":"Gujarat Lions","total_wins":4},{"season":2017,"winner":"Kings XI Punjab","total_wins":7},{"season":2017,"winner":"Kolkata Knight Riders","total_wins":9},{"season":2017,"winner":"Mumbai Indians","total_wins":12},{"season":2017,"winner":"Rising Pune Supergiant","total_wins":10},{"season":2017,"winner":"Royal Challengers Bangalore","total_wins":3},{"season":2017,"winner":"Sunrisers Hyderabad","total_wins":8}],"extraRunsConcededByEachTeam":[{"bowling_team":"Delhi Daredevils","extra_runs_conceded":106},{"bowling_team":"Gujarat Lions","extra_runs_conceded":98},{"bowling_team":"Kings XI Punjab","extra_runs_conceded":100},{"bowling_team":"Kolkata Knight Riders","extra_runs_conceded":122},{"bowling_team":"Mumbai Indians","extra_runs_conceded":102},{"bowling_team":"Rising Pune Supergiants","extra_runs_conceded":108},{"bowling_team":"Royal Challengers Bangalore","extra_runs_conceded":156},{"bowling_team":"Sunrisers Hyderabad","extra_runs_conceded":107}],"economicalBowlers":[{"bowler":"RN ten Doeschate","economy_rate":3.4286},{"bowler":"J Yadav","economy_rate":4.1429},{"bowler":"V Kohli","economy_rate":5.4545},{"bowler":"R Ashwin","economy_rate":5.725},{"bowler":"S Nadeem","economy_rate":5.8636},{"bowler":"Z Khan","economy_rate":6.1548},{"bowler":"Parvez Rasool","economy_rate":6.2},{"bowler":"MC Henriques","economy_rate":6.2675},{"bowler":"MA Starc","economy_rate":6.75},{"bowler":"M de Lange","economy_rate":6.9231}],"teamWonTossAndMatch":[{"winner":"Chennai Super Kings","timesBoth":42},{"winner":"Deccan Chargers","timesBoth":19},{"winner":"Delhi Daredevils","timesBoth":33},{"winner":"Gujarat Lions","timesBoth":10},{"winner":"Kings XI Punjab","timesBoth":28},{"winner":"Kochi Tuskers Kerala","timesBoth":4},{"winner":"Kolkata Knight Riders","timesBoth":44},{"winner":"Mumbai Indians","timesBoth":48},{"winner":"Pune Warriors","timesBoth":3},{"winner":"Rajasthan Royals","timesBoth":34},{"winner":"Rising Pune Supergiant","timesBoth":5},{"winner":"Rising Pune Supergiants","timesBoth":3},{"winner":"Royal Challengers Bangalore","timesBoth":35},{"winner":"Sunrisers Hyderabad","timesBoth":17}]}
+{
+    "matchesPlayedPerYear": [
+        {
+            "season": 2008,
+            "matchesCount": 58
+        },
+        {
+            "season": 2009,
+            "matchesCount": 57
+        },
+        {
+            "season": 2010,
+            "matchesCount": 60
+        },
+        {
+            "season": 2011,
+            "matchesCount": 73
+        },
+        {
+            "season": 2012,
+            "matchesCount": 74
+        },
+        {
+            "season": 2013,
+            "matchesCount": 76
+        },
+        {
+            "season": 2014,
+            "matchesCount": 60
+        },
+        {
+            "season": 2015,
+            "matchesCount": 59
+        },
+        {
+            "season": 2016,
+            "matchesCount": 60
+        },
+        {
+            "season": 2017,
+            "matchesCount": 59
+        }
+    ],
+    "matchesWonByEachTeam": [
+        {
+            "season": 2008,
+            "winner": "Chennai Super Kings",
+            "total_wins": 9
+        },
+        {
+            "season": 2008,
+            "winner": "Deccan Chargers",
+            "total_wins": 2
+        },
+        {
+            "season": 2008,
+            "winner": "Delhi Daredevils",
+            "total_wins": 7
+        },
+        {
+            "season": 2008,
+            "winner": "Kings XI Punjab",
+            "total_wins": 10
+        },
+        {
+            "season": 2008,
+            "winner": "Kolkata Knight Riders",
+            "total_wins": 6
+        },
+        {
+            "season": 2008,
+            "winner": "Mumbai Indians",
+            "total_wins": 7
+        },
+        {
+            "season": 2008,
+            "winner": "Rajasthan Royals",
+            "total_wins": 13
+        },
+        {
+            "season": 2008,
+            "winner": "Royal Challengers Bangalore",
+            "total_wins": 4
+        },
+        {
+            "season": 2009,
+            "winner": "Chennai Super Kings",
+            "total_wins": 8
+        },
+        {
+            "season": 2009,
+            "winner": "Deccan Chargers",
+            "total_wins": 9
+        },
+        {
+            "season": 2009,
+            "winner": "Delhi Daredevils",
+            "total_wins": 10
+        },
+        {
+            "season": 2009,
+            "winner": "Kings XI Punjab",
+            "total_wins": 7
+        },
+        {
+            "season": 2009,
+            "winner": "Kolkata Knight Riders",
+            "total_wins": 3
+        },
+        {
+            "season": 2009,
+            "winner": "Mumbai Indians",
+            "total_wins": 5
+        },
+        {
+            "season": 2009,
+            "winner": "Rajasthan Royals",
+            "total_wins": 6
+        },
+        {
+            "season": 2009,
+            "winner": "Royal Challengers Bangalore",
+            "total_wins": 9
+        },
+        {
+            "season": 2010,
+            "winner": "Chennai Super Kings",
+            "total_wins": 9
+        },
+        {
+            "season": 2010,
+            "winner": "Deccan Chargers",
+            "total_wins": 8
+        },
+        {
+            "season": 2010,
+            "winner": "Delhi Daredevils",
+            "total_wins": 7
+        },
+        {
+            "season": 2010,
+            "winner": "Kings XI Punjab",
+            "total_wins": 4
+        },
+        {
+            "season": 2010,
+            "winner": "Kolkata Knight Riders",
+            "total_wins": 7
+        },
+        {
+            "season": 2010,
+            "winner": "Mumbai Indians",
+            "total_wins": 11
+        },
+        {
+            "season": 2010,
+            "winner": "Rajasthan Royals",
+            "total_wins": 6
+        },
+        {
+            "season": 2010,
+            "winner": "Royal Challengers Bangalore",
+            "total_wins": 8
+        },
+        {
+            "season": 2011,
+            "winner": "",
+            "total_wins": 1
+        },
+        {
+            "season": 2011,
+            "winner": "Chennai Super Kings",
+            "total_wins": 11
+        },
+        {
+            "season": 2011,
+            "winner": "Deccan Chargers",
+            "total_wins": 6
+        },
+        {
+            "season": 2011,
+            "winner": "Delhi Daredevils",
+            "total_wins": 4
+        },
+        {
+            "season": 2011,
+            "winner": "Kings XI Punjab",
+            "total_wins": 7
+        },
+        {
+            "season": 2011,
+            "winner": "Kochi Tuskers Kerala",
+            "total_wins": 6
+        },
+        {
+            "season": 2011,
+            "winner": "Kolkata Knight Riders",
+            "total_wins": 8
+        },
+        {
+            "season": 2011,
+            "winner": "Mumbai Indians",
+            "total_wins": 10
+        },
+        {
+            "season": 2011,
+            "winner": "Pune Warriors",
+            "total_wins": 4
+        },
+        {
+            "season": 2011,
+            "winner": "Rajasthan Royals",
+            "total_wins": 6
+        },
+        {
+            "season": 2011,
+            "winner": "Royal Challengers Bangalore",
+            "total_wins": 10
+        },
+        {
+            "season": 2012,
+            "winner": "Chennai Super Kings",
+            "total_wins": 10
+        },
+        {
+            "season": 2012,
+            "winner": "Deccan Chargers",
+            "total_wins": 4
+        },
+        {
+            "season": 2012,
+            "winner": "Delhi Daredevils",
+            "total_wins": 11
+        },
+        {
+            "season": 2012,
+            "winner": "Kings XI Punjab",
+            "total_wins": 8
+        },
+        {
+            "season": 2012,
+            "winner": "Kolkata Knight Riders",
+            "total_wins": 12
+        },
+        {
+            "season": 2012,
+            "winner": "Mumbai Indians",
+            "total_wins": 10
+        },
+        {
+            "season": 2012,
+            "winner": "Pune Warriors",
+            "total_wins": 4
+        },
+        {
+            "season": 2012,
+            "winner": "Rajasthan Royals",
+            "total_wins": 7
+        },
+        {
+            "season": 2012,
+            "winner": "Royal Challengers Bangalore",
+            "total_wins": 8
+        },
+        {
+            "season": 2013,
+            "winner": "Chennai Super Kings",
+            "total_wins": 12
+        },
+        {
+            "season": 2013,
+            "winner": "Delhi Daredevils",
+            "total_wins": 3
+        },
+        {
+            "season": 2013,
+            "winner": "Kings XI Punjab",
+            "total_wins": 8
+        },
+        {
+            "season": 2013,
+            "winner": "Kolkata Knight Riders",
+            "total_wins": 6
+        },
+        {
+            "season": 2013,
+            "winner": "Mumbai Indians",
+            "total_wins": 13
+        },
+        {
+            "season": 2013,
+            "winner": "Pune Warriors",
+            "total_wins": 4
+        },
+        {
+            "season": 2013,
+            "winner": "Rajasthan Royals",
+            "total_wins": 11
+        },
+        {
+            "season": 2013,
+            "winner": "Royal Challengers Bangalore",
+            "total_wins": 9
+        },
+        {
+            "season": 2013,
+            "winner": "Sunrisers Hyderabad",
+            "total_wins": 10
+        },
+        {
+            "season": 2014,
+            "winner": "Chennai Super Kings",
+            "total_wins": 10
+        },
+        {
+            "season": 2014,
+            "winner": "Delhi Daredevils",
+            "total_wins": 2
+        },
+        {
+            "season": 2014,
+            "winner": "Kings XI Punjab",
+            "total_wins": 12
+        },
+        {
+            "season": 2014,
+            "winner": "Kolkata Knight Riders",
+            "total_wins": 11
+        },
+        {
+            "season": 2014,
+            "winner": "Mumbai Indians",
+            "total_wins": 7
+        },
+        {
+            "season": 2014,
+            "winner": "Rajasthan Royals",
+            "total_wins": 7
+        },
+        {
+            "season": 2014,
+            "winner": "Royal Challengers Bangalore",
+            "total_wins": 5
+        },
+        {
+            "season": 2014,
+            "winner": "Sunrisers Hyderabad",
+            "total_wins": 6
+        },
+        {
+            "season": 2015,
+            "winner": "",
+            "total_wins": 2
+        },
+        {
+            "season": 2015,
+            "winner": "Chennai Super Kings",
+            "total_wins": 10
+        },
+        {
+            "season": 2015,
+            "winner": "Delhi Daredevils",
+            "total_wins": 5
+        },
+        {
+            "season": 2015,
+            "winner": "Kings XI Punjab",
+            "total_wins": 3
+        },
+        {
+            "season": 2015,
+            "winner": "Kolkata Knight Riders",
+            "total_wins": 7
+        },
+        {
+            "season": 2015,
+            "winner": "Mumbai Indians",
+            "total_wins": 10
+        },
+        {
+            "season": 2015,
+            "winner": "Rajasthan Royals",
+            "total_wins": 7
+        },
+        {
+            "season": 2015,
+            "winner": "Royal Challengers Bangalore",
+            "total_wins": 8
+        },
+        {
+            "season": 2015,
+            "winner": "Sunrisers Hyderabad",
+            "total_wins": 7
+        },
+        {
+            "season": 2016,
+            "winner": "Delhi Daredevils",
+            "total_wins": 7
+        },
+        {
+            "season": 2016,
+            "winner": "Gujarat Lions",
+            "total_wins": 9
+        },
+        {
+            "season": 2016,
+            "winner": "Kings XI Punjab",
+            "total_wins": 4
+        },
+        {
+            "season": 2016,
+            "winner": "Kolkata Knight Riders",
+            "total_wins": 8
+        },
+        {
+            "season": 2016,
+            "winner": "Mumbai Indians",
+            "total_wins": 7
+        },
+        {
+            "season": 2016,
+            "winner": "Rising Pune Supergiants",
+            "total_wins": 5
+        },
+        {
+            "season": 2016,
+            "winner": "Royal Challengers Bangalore",
+            "total_wins": 9
+        },
+        {
+            "season": 2016,
+            "winner": "Sunrisers Hyderabad",
+            "total_wins": 11
+        },
+        {
+            "season": 2017,
+            "winner": "Delhi Daredevils",
+            "total_wins": 6
+        },
+        {
+            "season": 2017,
+            "winner": "Gujarat Lions",
+            "total_wins": 4
+        },
+        {
+            "season": 2017,
+            "winner": "Kings XI Punjab",
+            "total_wins": 7
+        },
+        {
+            "season": 2017,
+            "winner": "Kolkata Knight Riders",
+            "total_wins": 9
+        },
+        {
+            "season": 2017,
+            "winner": "Mumbai Indians",
+            "total_wins": 12
+        },
+        {
+            "season": 2017,
+            "winner": "Rising Pune Supergiant",
+            "total_wins": 10
+        },
+        {
+            "season": 2017,
+            "winner": "Royal Challengers Bangalore",
+            "total_wins": 3
+        },
+        {
+            "season": 2017,
+            "winner": "Sunrisers Hyderabad",
+            "total_wins": 8
+        }
+    ],
+    "extraRunsConcededByEachTeam": [
+        {
+            "bowling_team": "Delhi Daredevils",
+            "extra_runs_conceded": 106
+        },
+        {
+            "bowling_team": "Gujarat Lions",
+            "extra_runs_conceded": 98
+        },
+        {
+            "bowling_team": "Kings XI Punjab",
+            "extra_runs_conceded": 100
+        },
+        {
+            "bowling_team": "Kolkata Knight Riders",
+            "extra_runs_conceded": 122
+        },
+        {
+            "bowling_team": "Mumbai Indians",
+            "extra_runs_conceded": 102
+        },
+        {
+            "bowling_team": "Rising Pune Supergiants",
+            "extra_runs_conceded": 108
+        },
+        {
+            "bowling_team": "Royal Challengers Bangalore",
+            "extra_runs_conceded": 156
+        },
+        {
+            "bowling_team": "Sunrisers Hyderabad",
+            "extra_runs_conceded": 107
+        }
+    ],
+    "economicalBowlers": [
+        {
+            "bowler": "RN ten Doeschate",
+            "economy_rate": 3.4286
+        },
+        {
+            "bowler": "J Yadav",
+            "economy_rate": 4.1429
+        },
+        {
+            "bowler": "V Kohli",
+            "economy_rate": 5.4545
+        },
+        {
+            "bowler": "R Ashwin",
+            "economy_rate": 5.725
+        },
+        {
+            "bowler": "S Nadeem",
+            "economy_rate": 5.8636
+        },
+        {
+            "bowler": "Z Khan",
+            "economy_rate": 6.1548
+        },
+        {
+            "bowler": "Parvez Rasool",
+            "economy_rate": 6.2
+        },
+        {
+            "bowler": "MC Henriques",
+            "economy_rate": 6.2675
+        },
+        {
+            "bowler": "MA Starc",
+            "economy_rate": 6.75
+        },
+        {
+            "bowler": "M de Lange",
+            "economy_rate": 6.9231
+        }
+    ],
+    "teamWonTossAndMatch": [
+        {
+            "winner": "Chennai Super Kings",
+            "timesBoth": 42
+        },
+        {
+            "winner": "Deccan Chargers",
+            "timesBoth": 19
+        },
+        {
+            "winner": "Delhi Daredevils",
+            "timesBoth": 33
+        },
+        {
+            "winner": "Gujarat Lions",
+            "timesBoth": 10
+        },
+        {
+            "winner": "Kings XI Punjab",
+            "timesBoth": 28
+        },
+        {
+            "winner": "Kochi Tuskers Kerala",
+            "timesBoth": 4
+        },
+        {
+            "winner": "Kolkata Knight Riders",
+            "timesBoth": 44
+        },
+        {
+            "winner": "Mumbai Indians",
+            "timesBoth": 48
+        },
+        {
+            "winner": "Pune Warriors",
+            "timesBoth": 3
+        },
+        {
+            "winner": "Rajasthan Royals",
+            "timesBoth": 34
+        },
+        {
+            "winner": "Rising Pune Supergiant",
+            "timesBoth": 5
+        },
+        {
+            "winner": "Rising Pune Supergiants",
+            "timesBoth": 3
+        },
+        {
+            "winner": "Royal Challengers Bangalore",
+            "timesBoth": 35
+        },
+        {
+            "winner": "Sunrisers Hyderabad",
+            "timesBoth": 17
+        }
+    ],
+    "strikeRateOfPlayer": [
+        {
+            "season": 2008,
+            "StrikeRate": 129.7806
+        },
+        {
+            "season": 2009,
+            "StrikeRate": 122.963
+        },
+        {
+            "season": 2010,
+            "StrikeRate": 133.4884
+        },
+        {
+            "season": 2011,
+            "StrikeRate": 158.7045
+        },
+        {
+            "season": 2012,
+            "StrikeRate": 126.1484
+        },
+        {
+            "season": 2013,
+            "StrikeRate": 154.698
+        },
+        {
+            "season": 2014,
+            "StrikeRate": 143.7984
+        },
+        {
+            "season": 2015,
+            "StrikeRate": 120.3883
+        },
+        {
+            "season": 2016,
+            "StrikeRate": 129.0909
+        },
+        {
+            "season": 2017,
+            "StrikeRate": 111.1111
+        }
+    ]
+}
