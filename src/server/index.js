@@ -14,6 +14,7 @@ async function main() {
     ipl.matchesPlayedPerYear(),
     ipl.matchesWonByEachTeam(),
     ipl.extraRunsConcededByEachTeam(),
+    ipl.economicalBowlers(),
   ]);
   dataProcess.saveData(result);
   connection.end();
