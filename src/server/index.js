@@ -15,6 +15,7 @@ async function main() {
     ipl.matchesWonByEachTeam(),
     ipl.extraRunsConcededByEachTeam(),
     ipl.economicalBowlers(),
+    ipl.teamWonTossAndMatch(),
   ]);
   dataProcess.saveData(result);
   connection.end();
