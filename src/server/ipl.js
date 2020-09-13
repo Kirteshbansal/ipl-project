@@ -35,10 +35,18 @@ function teamWonTossAndMatch() {
   return dataProcess.queryExecuter(teamWonTossAndMatchQuery);
 }
 
+// Strike rate of a batsman for each season
+function strikeRateOfPlayer() {
+  const strikeRateOfPlayerQuery =
+    "SELECT matches.season, ((SUM(deliveries.batsman_runs)) / (COUNT(deliveries.ball)))*100 AS StrikeRate FROM matches LEFT JOIN deliveries ON matches.id = deliveries.match_id WHERE batsman = 'MS Dhoni' GROUP BY season;";
+  return dataProcess.queryExecuter(strikeRateOfPlayerQuery);
+}
+
 module.exports = {
   matchesPlayedPerYear: matchesPlayedPerYear,
   matchesWonByEachTeam: matchesWonByEachTeam,
   extraRunsConcededByEachTeam: extraRunsConcededByEachTeam,
   economicalBowlers: economicalBowlers,
   teamWonTossAndMatch: teamWonTossAndMatch,
+  strikeRateOfPlayer: strikeRateOfPlayer,
 };
