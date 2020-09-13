@@ -12,6 +12,7 @@ function visualizeData(data) {
   visualizeExtraRunsConcededByEachTeam(data.extraRunsConcededByEachTeam);
   visualizeEconomicalBowlers(data.economicalBowlers);
   visualizeTeamWonTossAndMatch(data.teamWonTossAndMatch);
+  visualizestrikeRateOfPlayer(data.strikeRateOfPlayer);
 }
 
 // visualizeMatchesPlayedPerYear
@@ -92,6 +93,18 @@ function visualizeTeamWonTossAndMatch(teamWonTossAndMatch) {
     "Teams",
     seriesData,
     angle
+  );
+}
+
+// visualizestrikeRateOfPlayer
+async function visualizestrikeRateOfPlayer(strikeRateOfPlayer) {
+  const playerData = strikeRateOfPlayer.map((el) => Object.values(el));
+  CommonHighChart(
+    "strike-rate-of-player",
+    "6. Strike Rate of MS Dhoni Per Season",
+    "Strike rate",
+    "Years",
+    playerData
   );
 }
 
