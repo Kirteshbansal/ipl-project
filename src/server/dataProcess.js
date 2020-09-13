@@ -6,6 +6,7 @@ exports.saveData = (result) => {
     matchesPlayedPerYear: result[0],
     matchesWonByEachTeam: result[1],
     extraRunsConcededByEachTeam: result[2],
+    economicalBowlers: result[3],
   };
 
   const jsonString = JSON.stringify(jsonData);
