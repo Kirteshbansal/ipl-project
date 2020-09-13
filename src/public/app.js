@@ -10,6 +10,7 @@ function visualizeData(data) {
   visualizeMatchesPlayedPerYear(data.matchesPlayedPerYear);
   visualizeMatchesWonByEachTeam(data.matchesWonByEachTeam);
   visualizeExtraRunsConcededByEachTeam(data.extraRunsConcededByEachTeam);
+  visualizeEconomicalBowlers(data.economicalBowlers);
 }
 
 // visualizeMatchesPlayedPerYear
@@ -60,6 +61,20 @@ function visualizeExtraRunsConcededByEachTeam(extraRunsConcededByEachTeam) {
     "3.Extra Runs Conceded by Each Team in 2016",
     "Runs",
     "Teams",
+    seriesData,
+    angle
+  );
+}
+
+// visualizeEconomicalBowlers
+function visualizeEconomicalBowlers(economicalBowlers) {
+  const seriesData = economicalBowlers.map((el) => Object.values(el));
+  const angle = -45;
+  CommonHighChart(
+    "economyRate",
+    "4.Top 10 Economical Bowler in 2015",
+    "Economy Rate",
+    "Bowlers",
     seriesData,
     angle
   );
