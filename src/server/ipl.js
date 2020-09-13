@@ -28,9 +28,17 @@ function economicalBowlers() {
   return dataProcess.queryExecuter(economicalBowlersQuery);
 }
 
+// Number of times each team won the toss and also won the match
+function teamWonTossAndMatch() {
+  const teamWonTossAndMatchQuery =
+    "SELECT winner, COUNT(winner) AS timesBoth FROM matches WHERE toss_winner = winner GROUP BY winner;";
+  return dataProcess.queryExecuter(teamWonTossAndMatchQuery);
+}
+
 module.exports = {
   matchesPlayedPerYear: matchesPlayedPerYear,
   matchesWonByEachTeam: matchesWonByEachTeam,
   extraRunsConcededByEachTeam: extraRunsConcededByEachTeam,
   economicalBowlers: economicalBowlers,
+  teamWonTossAndMatch: teamWonTossAndMatch,
 };
