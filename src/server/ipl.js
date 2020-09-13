@@ -21,8 +21,16 @@ function extraRunsConcededByEachTeam() {
   return dataProcess.queryExecuter(extraRunsConcededByEachTeamQuery);
 }
 
+// Extra runs conceded per team in the year 2016
+function economicalBowlers() {
+  const economicalBowlersQuery =
+    "SELECT `bowler`, (SUM(total_runs)/(COUNT(ball)/6)) AS economy_rate FROM `deliveries` LEFT JOIN matches ON match_id = id WHERE season = 2015 GROUP BY `bowler` ORDER BY (SUM(total_runs)/(COUNT(ball)/6)) ASC LIMIT 10;";
+  return dataProcess.queryExecuter(economicalBowlersQuery);
+}
+
 module.exports = {
   matchesPlayedPerYear: matchesPlayedPerYear,
   matchesWonByEachTeam: matchesWonByEachTeam,
   extraRunsConcededByEachTeam: extraRunsConcededByEachTeam,
+  economicalBowlers: economicalBowlers,
 };
