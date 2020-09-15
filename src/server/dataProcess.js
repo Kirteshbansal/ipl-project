@@ -3,6 +3,7 @@ const static = require("./static");
 exports.saveData = (result) => {
   const jsonData = {
     matchesPlayedPerYear: result[0],
+    matchesWonByEachTeam: result[1],
   };
 
   const jsonString = JSON.stringify(jsonData);
