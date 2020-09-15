@@ -19,6 +19,25 @@ async function matchesPlayedPerYear() {
   }
 }
 
+// Number of matches won per team per year in IPL
+async function matchesWonByEachTeam() {
+  try {
+    return await matches
+      .findAll({
+        attributes: [
+          "season",
+          "winner",
+          [sequelize.fn("COUNT", sequelize.col("winner")), "total_wins"],
+        ],
+        group: ["season", "winner"],
+      })
+      .then((d) => JSON.parse(JSON.stringify(d)));
+  } catch (err) {
+    throw err;
+  }
+}
+
 module.exports = {
   matchesPlayedPerYear: matchesPlayedPerYear,
+  matchesWonByEachTeam: matchesWonByEachTeam,
 };
