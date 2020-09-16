@@ -71,8 +71,43 @@ async function extraRunsConcededByEachTeam() {
   }
 }
 
+// Top 10 economical bowler in the year 2015
+async function economicalBowlers() {
+  deliveries.belongsTo(matches, { foreignKey: "match_id" });
+  matches.hasMany(deliveries);
+  try {
+    const result = await deliveries.findAll({
+      attributes: [
+        "bowler",
+        [sequelize.fn("AVG", sequelize.col("total_runs")), "economy_rate"],
+      ],
+      raw: true,
+      include: [
+        {
+          model: matches,
+          required: true,
+          attributes: [],
+          where: {
+            season: "2015",
+          },
+        },
+      ],
+      group: "bowler",
+      order: sequelize.col("economy_rate"),
+      limit: 10,
+    });
+    return result.map((bowler) => ({
+      bowler: bowler["bowler"],
+      economy_rate: Number((Number(bowler["economy_rate"]) * 6).toFixed(2)),
+    }));
+  } catch (err) {
+    throw err;
+  }
+}
+
 module.exports = {
   matchesPlayedPerYear: matchesPlayedPerYear,
   matchesWonByEachTeam: matchesWonByEachTeam,
   extraRunsConcededByEachTeam: extraRunsConcededByEachTeam,
+  economicalBowlers: economicalBowlers,
 };
