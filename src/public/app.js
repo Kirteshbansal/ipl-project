@@ -11,8 +11,6 @@ function visualizeData(data) {
   visualizeMatchesWonByEachTeam(data.matchesWonByEachTeam);
   visualizeExtraRunsConcededByEachTeam(data.extraRunsConcededByEachTeam);
   visualizeEconomicalBowlers(data.economicalBowlers);
-  visualizeTeamWonTossAndMatch(data.teamWonTossAndMatch);
-  visualizestrikeRateOfPlayer(data.strikeRateOfPlayer);
 }
 
 // visualizeMatchesPlayedPerYear
@@ -79,32 +77,6 @@ function visualizeEconomicalBowlers(economicalBowlers) {
     "Bowlers",
     seriesData,
     angle
-  );
-}
-
-// visualizeTeamWonTossAndMatch
-function visualizeTeamWonTossAndMatch(teamWonTossAndMatch) {
-  const seriesData = teamWonTossAndMatch.map((el) => Object.values(el));
-  const angle = -45;
-  CommonHighChart(
-    "teams-won-matche-and-toss",
-    "5.Number of Times Each Team Won Toss & Match",
-    "No. of Times",
-    "Teams",
-    seriesData,
-    angle
-  );
-}
-
-// visualizestrikeRateOfPlayer
-async function visualizestrikeRateOfPlayer(strikeRateOfPlayer) {
-  const playerData = strikeRateOfPlayer.map((el) => Object.values(el));
-  CommonHighChart(
-    "strike-rate-of-player",
-    "6. Strike Rate of MS Dhoni Per Season",
-    "Strike rate",
-    "Years",
-    playerData
   );
 }
 
