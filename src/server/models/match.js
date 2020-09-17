@@ -1,7 +1,6 @@
 const sequelize = require("sequelize");
 
 const connection = require("../config");
-const static = require("../static");
 
 const matches = connection.define(
   "matches",
@@ -34,18 +33,5 @@ const matches = connection.define(
     timestamps: false,
   }
 );
-
-async function main() {
-  try {
-    await connection.sync();
-    csv()
-      .fromFile(static.MATCHES_FILE_PATH)
-      .then((data) => matches.bulkCreate(data))
-      .then(() => console.log("Matches data has been inserted into table."));
-  } catch (err) {
-    throw err;
-  }
-}
-main().catch(console.error);
 
 module.exports = matches;
