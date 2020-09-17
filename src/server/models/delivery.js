@@ -1,10 +1,6 @@
 const sequelize = require("sequelize");
-const _ = require("lodash");
-
-const path = require("path");
 
 const connection = require("../config");
-const static = require("../static");
 
 let deliveries = connection.define("deliveries", {
   match_id: {
@@ -33,24 +29,5 @@ let deliveries = connection.define("deliveries", {
 });
 
 deliveries.removeAttribute("id");
-
-async function main() {
-  try {
-    await connection.sync({ force: true });
-    let json = await csv().fromFile(static.DELIVERIES_FILE_PATH);
-    const chunkSize = 16000;
-    const chunks = _.chunk(json, chunkSize);
-    return chunks.reduce((acc, chunk, i) => {
-      return acc.then(() => {
-        return deliveries.bulkCreate(chunk).then(() => {
-          console.log("Done with", i);
-        });
-      });
-    }, Promise.resolve());
-  } catch (err) {
-    throw err;
-  }
-}
-main().catch((err) => console.log(err));
 
 module.exports = deliveries;
